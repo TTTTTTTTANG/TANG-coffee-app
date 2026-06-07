@@ -1,3 +1,16 @@
+const loginForm = document.querySelector("#loginForm");
+const loginName = document.querySelector("#loginName");
+
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  document.body.classList.add("login-complete");
+  document.body.classList.remove("login-active");
+  const name = loginName.value.trim();
+  if (name) {
+    document.querySelector(".brand p").textContent = name;
+  }
+});
+
 const knowledge = [
   { category: "豆种", title: "阿拉比卡", body: "香气细腻、酸质更清晰，常见于精品咖啡，适合表现花香、果香与层次感。" },
   { category: "豆种", title: "罗布斯塔", body: "咖啡因更高，苦感和厚重感更明显，常用于意式拼配来增强油脂与力度。" },

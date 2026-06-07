@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TANG Coffee</title>
-    <link rel="stylesheet" href="./styles.css?v=3" />
+    <link rel="stylesheet" href="./styles.css?v=4" />
   </head>
-  <body>
-    <main class="app-shell">
+  <body class="login-active">
+    <section class="login-screen" id="loginScreen" aria-label="TANG login">
+      <div class="login-visual" aria-hidden="true">
+        <div class="cup-scene">
+          <span class="steam steam-one"></span>
+          <span class="steam steam-two"></span>
+          <span class="steam steam-three"></span>
+          <div class="cup">
+            <span class="coffee-surface"></span>
+          </div>
+          <div class="saucer"></div>
+        </div>
+      </div>
+      <form class="login-panel" id="loginForm">
+        <p class="eyebrow">TANG Coffee</p>
+        <h1>进入咖啡知识手册</h1>
+        <label>
+          <span>名称</span>
+          <input id="loginName" type="text" autocomplete="name" placeholder="TANG" />
+        </label>
+        <label>
+          <span>口令</span>
+          <input type="password" autocomplete="current-password" placeholder="coffee" />
+        </label>
+        <button type="submit">进入 TANG</button>
+      </form>
+    </section>
+
+<main class="app-shell">
       <aside class="sidebar" aria-label="Coffee app navigation">
         <div class="brand">
-          <span class="brand-mark">TANG</span>
           <div>
             <p>TANG</p>
             <span>Coffee Notes</span>
@@ -84,6 +110,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=3"></script>
+    <script src="./app.js?v=4"></script>
   </body>
 </html>
