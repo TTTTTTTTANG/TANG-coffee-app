@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TANG Coffee</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Coffee app navigation">
+        <div class="brand">
+          <span class="brand-mark">BR</span>
+          <div>
+            <p>TANG</p>
+            <span>Coffee Notes</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="learn">知识</button>
+          <button class="nav-item" data-view="brew">冲煮</button>
+          <button class="nav-item" data-view="flavor">风味</button>
+          <button class="nav-item" data-view="glossary">术语</button>
+        </nav>
+      </aside>
+
+      <section class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Coffee knowledge app</p>
+            <h1>咖啡知识手册</h1>
+          </div>
+          <div class="search-wrap">
+            <input id="searchInput" type="search" placeholder="搜索豆种、冲煮、术语" />
+          </div>
+        </header>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <p>从豆种、烘焙、研磨到萃取参数，快速建立一套清晰的咖啡认知。</p>
+            <div class="hero-stats">
+              <span><strong>18</strong>知识点</span>
+              <span><strong>6</strong>冲煮法</span>
+              <span><strong>24</strong>风味词</span>
+            </div>
+          </div>
+          <img src="./assets/coffee-hero.png" alt="咖啡杯、咖啡豆与品鉴笔记" />
+        </section>
+
+        <section id="learn" class="view active">
+          <div class="section-head">
+            <h2>核心知识</h2>
+            <div class="chips" id="categoryFilters"></div>
+          </div>
+          <div class="grid knowledge-grid" id="knowledgeGrid"></div>
+        </section>
+
+        <section id="brew" class="view">
+          <div class="section-head">
+            <h2>冲煮参数</h2>
+            <p>选择冲煮方式，快速查看粉水比、温度、时间和口感倾向。</p>
+          </div>
+          <div class="brew-layout">
+            <div class="method-list" id="methodList"></div>
+            <article class="method-detail" id="methodDetail"></article>
+          </div>
+        </section>
+
+        <section id="flavor" class="view">
+          <div class="section-head">
+            <h2>风味图谱</h2>
+            <p>按香气、酸质、甜感、口感理解一杯咖啡的表达。</p>
+          </div>
+          <div class="flavor-board" id="flavorBoard"></div>
+        </section>
+
+        <section id="glossary" class="view">
+          <div class="section-head">
+            <h2>术语速查</h2>
+            <p>把常见咖啡词汇压缩成容易记住的一句话。</p>
+          </div>
+          <div class="grid glossary-grid" id="glossaryGrid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
