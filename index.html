@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TANG Coffee</title>
-    <link rel="stylesheet" href="./styles.css?v=2" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
   </head>
   <body>
     <main class="app-shell">
@@ -17,10 +17,10 @@
           </div>
         </div>
         <nav class="nav-list">
-          <button class="nav-item active" data-view="learn">鐭ヨ瘑</button>
-          <button class="nav-item" data-view="brew">鍐茬叜</button>
-          <button class="nav-item" data-view="flavor">椋庡懗</button>
-          <button class="nav-item" data-view="glossary">鏈</button>
+          <button class="nav-item active" data-view="learn">知识</button>
+          <button class="nav-item" data-view="brew">冲煮</button>
+          <button class="nav-item" data-view="flavor">风味</button>
+          <button class="nav-item" data-view="glossary">术语</button>
         </nav>
       </aside>
 
@@ -28,28 +28,28 @@
         <header class="topbar">
           <div>
             <p class="eyebrow">Coffee knowledge app</p>
-            <h1>鍜栧暋鐭ヨ瘑鎵嬪唽</h1>
+            <h1>咖啡知识手册</h1>
           </div>
           <div class="search-wrap">
-            <input id="searchInput" type="search" placeholder="鎼滅储璞嗙銆佸啿鐓€佹湳璇? />
+            <input id="searchInput" type="search" placeholder="搜索豆种、冲煮、术语" />
           </div>
         </header>
 
         <section class="hero">
           <div class="hero-copy">
-            <p>浠庤眴绉嶃€佺儤鐒欍€佺爺纾ㄥ埌钀冨彇鍙傛暟锛屽揩閫熷缓绔嬩竴濂楁竻鏅扮殑鍜栧暋璁ょ煡銆?/p>
+            <p>从豆种、烘焙、研磨到萃取参数，快速建立一套清晰的咖啡认知。</p>
             <div class="hero-stats">
-              <span><strong>18</strong>鐭ヨ瘑鐐?/span>
-              <span><strong>6</strong>鍐茬叜娉?/span>
-              <span><strong>24</strong>椋庡懗璇?/span>
+              <span><strong>18</strong>知识点</span>
+              <span><strong>6</strong>冲煮法</span>
+              <span><strong>24</strong>风味词</span>
             </div>
           </div>
-          <img src="./assets/coffee-hero.png" alt="鍜栧暋鏉€佸挅鍟¤眴涓庡搧閴寸瑪璁? />
+          <img src="./assets/coffee-hero.png" alt="咖啡杯、咖啡豆与品鉴笔记" />
         </section>
 
         <section id="learn" class="view active">
           <div class="section-head">
-            <h2>鏍稿績鐭ヨ瘑</h2>
+            <h2>核心知识</h2>
             <div class="chips" id="categoryFilters"></div>
           </div>
           <div class="grid knowledge-grid" id="knowledgeGrid"></div>
@@ -57,8 +57,8 @@
 
         <section id="brew" class="view">
           <div class="section-head">
-            <h2>鍐茬叜鍙傛暟</h2>
-            <p>閫夋嫨鍐茬叜鏂瑰紡锛屽揩閫熸煡鐪嬬矇姘存瘮銆佹俯搴︺€佹椂闂村拰鍙ｆ劅鍊惧悜銆?/p>
+            <h2>冲煮参数</h2>
+            <p>选择冲煮方式，快速查看粉水比、温度、时间和口感倾向。</p>
           </div>
           <div class="brew-layout">
             <div class="method-list" id="methodList"></div>
@@ -68,23 +68,22 @@
 
         <section id="flavor" class="view">
           <div class="section-head">
-            <h2>椋庡懗鍥捐氨</h2>
-            <p>鎸夐姘斻€侀吀璐ㄣ€佺敎鎰熴€佸彛鎰熺悊瑙ｄ竴鏉挅鍟＄殑琛ㄨ揪銆?/p>
+            <h2>风味图谱</h2>
+            <p>按香气、酸质、甜感、口感理解一杯咖啡的表达。</p>
           </div>
           <div class="flavor-board" id="flavorBoard"></div>
         </section>
 
         <section id="glossary" class="view">
           <div class="section-head">
-            <h2>鏈閫熸煡</h2>
-            <p>鎶婂父瑙佸挅鍟¤瘝姹囧帇缂╂垚瀹规槗璁颁綇鐨勪竴鍙ヨ瘽銆?/p>
+            <h2>术语速查</h2>
+            <p>把常见咖啡词汇压缩成容易记住的一句话。</p>
           </div>
           <div class="grid glossary-grid" id="glossaryGrid"></div>
         </section>
       </section>
     </main>
 
-    <script src="./app.js?v=2"></script>
+    <script src="./app.js?v=3"></script>
   </body>
 </html>
-
